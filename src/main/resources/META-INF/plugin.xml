@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.github.markdown.toolbar</id>
+    <name>Markdown Visual Toolbar</name>
+    <version>1.0.0</version>
+    <vendor email="developer@example.com" url="https://github.com">Markdown Helper Tools</vendor>
+
+    <description><![CDATA[
+      Adds a full visual formatting toolbar at the top of Markdown (.md) files in IntelliJ IDEA.
+      Features: Undo, Redo, Bold, Italic, Headings, Strikethrough, Unordered/Ordered/Task Lists, Quotes, Code Blocks, Tables, Links, and Images.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <editorNotificationProvider implementation="com.github.markdown.toolbar.MarkdownToolbarProvider"/>
+    </extensions>
+</idea-plugin>
